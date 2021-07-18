@@ -13,11 +13,13 @@ int main() {
         s1.pop(); 
     }
     catch(const char *err_msg) {
-        cout << err_msg << endl;    //for debugging.
         cerr << err_msg << endl;
     }
     Stack<int> s(1);
     s.push(2);
     s.push(3);
+
+    
+    system("PAUSE"); // debugging purposes.
     return 0;
 }
