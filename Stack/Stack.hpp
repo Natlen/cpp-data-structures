@@ -8,6 +8,7 @@ template <typename T> class Stack : SingleNode<T> {
     Stack();
     Stack(T);
     bool isEmpty();
+    T peek();
     void push(T);
-    T pop();
+    T pop(int index = 0);
 };
