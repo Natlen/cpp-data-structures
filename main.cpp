@@ -5,6 +5,10 @@
 #include "Stack/Stack.hpp"
 #include "Stack/Stack.cpp"
 
+#include "binary-tree/BinTreeNode.hpp"
+#include "binary-tree/BinTreeNode.cpp"
+#include "binary-tree/BinaryTree.hpp"
+#include "binary-tree/BinaryTree.cpp"
 #include <iostream>
 
 using namespace std;
@@ -26,8 +30,9 @@ int main() {
         // cout << s.pop() << endl;
         // cout << s.pop() << endl;
         // cout << s.pop() << endl;
-    /*  QUEUE   */
-    DualNode<int> dn(5);
+    /*  BinaryTree   */
+    BinaryTree<int> t;
+    BinaryTree<int> t1(5);
     system("PAUSE");    // debugging purposes.
     return 0;
 }
