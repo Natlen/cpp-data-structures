@@ -9,7 +9,7 @@ public:
     ~BinaryTree();
     void delete_tree(BinTreeNode<T> *);
     void insert(T);
-    void show();
+    void show();  
     
 private:
     void _insert(T, BinTreeNode<T> *);  

@@ -3,6 +3,7 @@ template <typename T> BinaryTree<T>::BinaryTree() : root(nullptr) { }
 template <typename T> BinaryTree<T>::BinaryTree(T _data) : root(new BinTreeNode<T>(_data)) { }
 template <typename T> BinaryTree<T>::~BinaryTree() {
     delete_tree(this->root);
+    this->root = nullptr;
 }
 template <typename T> void BinaryTree<T>::delete_tree(BinTreeNode<T> *t) {
     if(t == nullptr)
@@ -30,6 +31,7 @@ template <typename T> void BinaryTree<T>::_insert(T _data, BinTreeNode<T> *t) {
 }
 template <typename T> void BinaryTree<T>::show() {
     _show(this->root);
+    std:: cout << std::endl;
 }
 template <typename T> void BinaryTree<T>::_show(BinTreeNode<T> *t) {
     if(t == nullptr)
