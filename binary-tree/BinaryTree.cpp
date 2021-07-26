@@ -33,6 +33,14 @@ template <typename T> void BinaryTree<T>::show() {
     _show(this->root);
     std:: cout << std::endl;
 }
+template <typename T> int BinaryTree<T>::height() {
+    return _height(this->root);
+}
+template <typename T> int BinaryTree<T>::_height(BinTreeNode<T> *t) {
+    if(t == nullptr)
+        return 0;
+    return MAX(1 + _height(t->left), 1 + _height(t->right));
+}
 template <typename T> void BinaryTree<T>::_show(BinTreeNode<T> *t) {
     if(t == nullptr)
         return;

@@ -9,6 +9,7 @@
 #include "binary-tree/BinTreeNode.cpp"
 #include "binary-tree/BinaryTree.hpp"
 #include "binary-tree/BinaryTree.cpp"
+
 #include <iostream>
 
 using namespace std;
@@ -49,8 +50,9 @@ int main() {
     t.insert(19);
     t.insert(18);
     t.show();
-    t.remove(19);
+    //t.remove(19);
     t.show();
+    cout << t.height();
     system("PAUSE");    // debugging purposes.
     return 0;
 }
