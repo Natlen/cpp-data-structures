@@ -31,13 +31,25 @@ int main() {
         // cout << s.pop() << endl;
         // cout << s.pop() << endl;
     /*  BinaryTree   */
-    BinaryTree<int> t = BinaryTree<int>(5);
-    t.insert(7);
-    t.insert(2);
-    t.insert(3);
+    BinaryTree<int> t = BinaryTree<int>(10);
+    //left
+    t.insert(5);
     t.insert(4);
-    t.insert(1);
     t.insert(6);
+    t.insert(2);
+    t.insert(7);
+    t.insert(1);
+    t.insert(3);
+    //right
+    t.insert(15);
+    t.insert(11);
+    t.insert(20);
+    t.insert(21);
+    t.insert(17);
+    t.insert(19);
+    t.insert(18);
+    t.show();
+    t.remove(15);
     t.show();
     system("PAUSE");    // debugging purposes.
     return 0;
