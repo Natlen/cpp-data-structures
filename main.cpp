@@ -50,9 +50,9 @@ int main() {
     t.insert(19);
     t.insert(18);
     t.show();
-    //t.remove(19);
+    t.remove(19);
     t.show();
-    cout << t.height();
+    cout << endl << t.height() << endl;
     system("PAUSE");    // debugging purposes.
     return 0;
 }
