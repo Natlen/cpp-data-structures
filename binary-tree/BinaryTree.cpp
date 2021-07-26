@@ -63,15 +63,9 @@ template <typename T> BinTreeNode<T>* BinaryTree<T>::_remove(T _data, BinTreeNod
         if(t->left == nullptr && t->right == nullptr)
            { delete t;  t = nullptr; return t; }
         //case 2 - node has one child - either left or right
-        else if(t->left == nullptr)
+        else if(t->left == nullptr || t->right == nullptr)
         {
-            BinTreeNode<T> *temp = t->right;
-            delete t;
-            t = temp;
-        }
-        else if (t->right == nullptr)
-        {
-            BinTreeNode<T> *temp = t->left;
+            BinTreeNode<T> *temp = t->left ? t->left : t->right;
             delete t;
             t = temp;
         }

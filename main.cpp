@@ -49,7 +49,7 @@ int main() {
     t.insert(19);
     t.insert(18);
     t.show();
-    t.remove(15);
+    t.remove(19);
     t.show();
     system("PAUSE");    // debugging purposes.
     return 0;
